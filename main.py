@@ -116,12 +116,12 @@ def main():
     rec_weights, rec_list = zip(*sorted(zip(rec_weights, rec_list)))
 
 
-    # print top 5
+    # print top 10
     clear()
     rec_length = len(rec_list)-1
     count = 1
-    print("\n\nTop 5 Recomendations:\n")
-    while(rec_length > len(rec_list) - 6):
+    print("\n\nTop 10 Recomendations:\n")
+    while(rec_length > len(rec_list) - 11):
         film_name = form(rec_list[rec_length])
         print(f"{count}. {film_name}, weight = {rec_weights[rec_length]}")
         rec_length -= 1
@@ -130,7 +130,8 @@ def main():
 
     print("\n")
     end = time.time()
-    print(f"time taken: {end - start}")
+    time = int(end - start)
+    print(f"time taken: {time/60} minutes, {time%60} seconds")
 
 
 
@@ -174,5 +175,5 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     if iteration == total: 
         print()
 
-
-main()
+if __name__ == "__main__":
+    main()

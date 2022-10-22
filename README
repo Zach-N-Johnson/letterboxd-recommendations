@@ -2,4 +2,4 @@
 
 A simple command line based webscraper that recommends films based on the user's favorites
 
-To use, enter your letterboxd username and the number of other users to compare against (rounds up to the nearest 25). Returns a top 5 recommendations based on other fans of the user's favorites, and their weights.
+To use, enter your letterboxd username and the number of other users to compare against (rounds up to the nearest 25). Returns a top 10 recommendations based on other fans of the user's favorites, and their weights.
